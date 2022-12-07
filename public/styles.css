@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(42, 19, 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#myprof {
+  max-width: 20vw;
+  max-height: 20vh;
+  border: 1px solid rgb(3, 0, 0);
+  border-radius: 50%;
+}
+ul {
+  list-style: none;
+  list-style-type: none;
+  text-align: center;
+  margin-top: 20px;
+  display: grid;
+  gap: 15px;
+  width: 20%;
+}
+ul a{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(92, 2, 2);
+  text-decoration: none;
+  transition: all 200ms ease;
+  padding: 0 25px;
+}
+li:hover{
+  font-size: 18px;
+}
+ul li {
+  border: rgba(226, 182, 182, 0.336) 1px solid;
+  border-radius: 25px;
+  width: 100%;
+  height: 5vh;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width:1000px){
+    ul{
+        width: 60%;
+    }
+}
